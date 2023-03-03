@@ -2,9 +2,7 @@
 #include <algorithm>
 using namespace std;
 
-void partition(int A[] , int begin , int end , int criterion){
-    if(criterion != A[end]) swap(A[criterion] , A[0]);
-
+void partition(int A[] , int begin , int end){
     int i = begin - 1 , j;
     for(j = begin; j < end; j++){
         if(A[j] <= A[end]){
@@ -22,7 +20,7 @@ int main(){
     int A[n];
     for(int i = 0; i < n; i++) cin >> A[i];
 
-    partition(A , 0 , n - 1 , A[n - 1]);
+    partition(A , 0 , n - 1);
 
     for(int i = 0; i < n; i++) cout << (i ? " " : "") << A[i];
     cout << endl;

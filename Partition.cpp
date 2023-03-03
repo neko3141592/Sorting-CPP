@@ -3,7 +3,7 @@
 using namespace std;
 
 void partition(int A[] , int begin , int end , int criterion){
-    if(criterion != end) swap(A[criterion] , A[0]);
+    if(criterion != A[end]) swap(A[criterion] , A[0]);
 
     int i = begin - 1 , j;
     for(j = begin; j < end; j++){

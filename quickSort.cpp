@@ -24,7 +24,7 @@ void quickSort(int A[] , int n , int p , int r){
 }
 
 int main(){
-    int n , q;
+    int n;
     cin >> n;
 
     int A[n];
